@@ -1,0 +1,107 @@
+* , html , body {
+  padding: 0;
+  margin: 0;
+  font-family: Sans-Serif;
+}
+
+.content {
+  background-color: #53ff7b;
+  padding: 15px;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.content1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+  width: 90%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 3px 4px 4px #919191;
+}
+.content1 h1 {
+  color: blue;
+  text-shadow: 3px 1px 1px #e56cff;
+}
+.atas {
+  display: flex;
+  gap: 2rem;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  animation: foto ease 1s alternate infinite;
+}
+@keyframes foto {
+  0% {
+    border: solid 2.5px blue;
+  }
+  100% {
+    border: solid 2.5px #53ff7b;
+  }
+}
+
+.foto2 {
+  width: 80px;
+  height: 80px;
+}
+
+/* text jalan */
+.text-jalan marquee{
+  display: flex;
+  margin-bottom: 30px;
+  color: yellow;
+  text-shadow: 4px 2px 2px #777;
+}
+/* text jalan end */
+.maaf {
+  background-color: #d0d0d0;
+  padding: 10px;
+  width: 90%;
+  height: 30%;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: solid 1.5px #c72dff;
+}
+.maaf p {
+  font-family: Times New Roman;
+}
+.lanjut a {
+  text-decoration: none;
+  color: white;
+  background-color: tomato;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  box-shadow: 5px 2px 2px #a4a4a4;
+}
+.lanjut a:hover {
+  background-color: red;
+  color: black;
+}
+
+/* tampilan mobile */
+@media (max-width:768px) {
+  .content {
+    width: 95%;
+  }
+  .content1 {
+    height: 50%;
+  }
+  
+  .foto {
+    width: 90px;
+    height: 90px;
+  }
+}
